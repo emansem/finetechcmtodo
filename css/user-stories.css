@@ -1,0 +1,121 @@
+.user-stories {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.page-header .subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.stories-container {
+    display: grid;
+    gap: 3rem;
+}
+
+.story-section {
+    background: var(--surface-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.story-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.story-card {
+    background: var(--surface-primary);
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.story-header {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.story-type {
+    color: var(--primary);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.story-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 1rem;
+    background: var(--surface-accent);
+    border-radius: var(--border-radius-sm);
+}
+
+.acceptance-criteria {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.acceptance-criteria h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.acceptance-criteria ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acceptance-criteria li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.acceptance-criteria li::before {
+    content: "✓";
+    color: var(--success);
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-stories {
+        padding: 1rem;
+    }
+
+    .story-card {
+        padding: 1rem;
+    }
+
+    .story-content {
+        padding: 0.75rem;
+    }
+}
+
+/* Animations */
+.story-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.story-card:hover {
+    transform: translateY(-2px);
+} 

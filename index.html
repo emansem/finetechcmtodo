@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FineTech Todo - Modern Task Management</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar Navigation (hidden initially) -->
+      <nav class="sidebar" style="display: none;">
+        <div class="sidebar-header">
+          <div class="logo">
+            <i class="fas fa-check-double"></i>
+            <span>FineTech Todo</span>
+          </div>
+        </div>
+        <div class="sidebar-nav">
+          <!-- Navigation items will be dynamically added here -->
+        </div>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main class="main-content welcome-mode">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen fade-in">
+          <div class="welcome-content">
+            <div class="welcome-header">
+              <i class="fas fa-check-double logo-icon"></i>
+              <h1>Welcome to FineTech Todo</h1>
+              <p class="subtitle">Modern task management for modern teams</p>
+            </div>
+
+            <div class="features-grid">
+              <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h3>Task Management</h3>
+                <p>Organize your tasks with priorities, labels, and due dates</p>
+              </div>
+              <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your productivity with intuitive dashboards</p>
+              </div>
+              <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Team Collaboration</h3>
+                <p>Work together seamlessly with team assignments</p>
+              </div>
+              <div class="feature-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Feature Planning</h3>
+                <p>Plan and track feature development effectively</p>
+              </div>
+            </div>
+
+            <div class="auth-container">
+              <button class="btn-github">
+                <i class="fab fa-github"></i>
+                Login with GitHub
+              </button>
+              <div class="auth-divider">
+                <span>or</span>
+              </div>
+              <button class="btn-demo">
+                <i class="fas fa-play"></i>
+                Try Demo
+              </button>
+            </div>
+          </div>
+
+          <footer class="welcome-footer">
+            <div class="footer-links">
+              <a href="#" class="footer-link">About</a>
+              <a href="#" class="footer-link">Documentation</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" style="display: none;">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/dist/app.js"></script>
+  </body>
+</html>

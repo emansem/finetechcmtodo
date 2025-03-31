@@ -1,0 +1,35 @@
+:root {
+  /* Dark theme colors (default) */
+  --bg-dark: #090f15;
+  --bg-dark-secondary: #010409;
+  --bg-card: #141d26;
+  --bg-secondary: #1a2634;
+  --bg-hover: #1e2c3a;
+  
+  /* Text colors */
+  --text-primary: #e4e6eb;
+  --text-secondary: #b0b3b8;
+  --text-disabled: #6b7280;
+  --text-dark: #1a1a1a;
+
+  /* Border colors */
+  --border-color: rgba(255, 255, 255, 0.1);
+
+  /* Accent colors */
+  --primary: #00a884;
+  --primary-dark: #008f6f;
+  --danger: #e3342f;
+  --error: #dc2626;
+  --success: #059669;
+  --info: #3490dc;
+  --warning: #fbbf24;
+
+  /* Feature specific colors */
+  --frontend-color: #7c3aed;
+  --frontend-color-dark: #6d28d9;
+  --backend-color: #2563eb;
+  --backend-color-dark: #1d4ed8;
+
+  /* Animation durations */
+  --transition-300: 300ms;
+}

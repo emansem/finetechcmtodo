@@ -1,0 +1,105 @@
+.user-flow {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.page-header .subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.flow-sections {
+    display: grid;
+    gap: 3rem;
+}
+
+.flow-section {
+    background: var(--surface-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.flow-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.flow-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--surface-primary);
+    border-radius: var(--border-radius-md);
+}
+
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--surface-accent);
+    border-radius: var(--border-radius-sm);
+    min-width: 100px;
+    text-align: center;
+}
+
+.flow-step i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.flow-step span {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.flow-arrow {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
+.flow-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 1rem;
+    background: var(--surface-primary);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-flow {
+        padding: 1rem;
+    }
+
+    .flow-diagram {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+    .flow-step {
+        width: 100%;
+    }
+} 

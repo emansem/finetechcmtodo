@@ -1,7 +1,10 @@
-# Dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependencies - more comprehensive
+**/node_modules
+**/node_modules/**
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Testing
 /coverage
@@ -37,3 +40,4 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
+finetechcmtodo/

@@ -3,16 +3,8 @@ export interface Todo {
     title: string;
     description?: string;
     completed: boolean;
-    createdAt: Date;
-    updatedAt: Date;
+    createdAt: number;
+    userId: string;
+    category?: 'frontend' | 'backend' | 'feature' | 'bug';
     priority: 'low' | 'medium' | 'high';
-    category?: string;
-    dueDate?: Date;
 }
-
-export type TodoFilter = {
-    status?: 'all' | 'active' | 'completed';
-    priority?: Todo['priority'];
-    category?: string;
-    search?: string;
-};
